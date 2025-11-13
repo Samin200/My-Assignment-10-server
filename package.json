@@ -4,5 +4,23 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^7.0.0"
-  }
+  },
+  "name": "vercel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samin200/My-Assignment-10-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samin200/My-Assignment-10-server/issues"
+  },
+  "homepage": "https://github.com/Samin200/My-Assignment-10-server#readme",
+  "description": ""
 }
