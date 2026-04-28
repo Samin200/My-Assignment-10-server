@@ -176,7 +176,7 @@ async function run() {
       res.send(result);
     });
 
-  app.post("/movies/:id/review", async (req, res) => {
+    app.post("/movies/:id/review", async (req, res) => {
   const { id } = req.params;
   const { userId, name, photoURL, text, rating } = req.body; // <- add photoURL
 
@@ -221,11 +221,10 @@ app.post("/movies/:id/dislike", async (req, res) => {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
+    app.listen(port, () => {
+      console.log(`My assignment 10 server is running on port: ${port}`);
+    });
   } finally {
   }
 }
 run().catch(console.dir);
-
-app.listen(port, () => {
-  console.log(`My assignment 10 server is running on port: ${port}`);
-});
